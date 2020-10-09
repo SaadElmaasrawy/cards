@@ -1,0 +1,132 @@
+/* Start Of Global Rules*/
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+/* End Of Global Rules */
+
+/* Start Of body Styling */
+body {
+    font-family: 'Inter', sans-serif;
+}
+/* End Of body Styling */
+
+/* Start Of Container Styling */
+
+.con{
+    display: flex;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    width: 90%;
+    margin: auto;
+}
+
+/* End Of Container Styling */
+
+/* Start Of Background Styling */
+body {
+    background-image: url('../images/pattern-bg.svg') , url('../images/pattern-curve.svg') , url('../images/pattern-quotes.svg');
+    background-repeat: no-repeat;
+    background-position: 95% 100% , 0 130% , 20% 37%;
+}
+
+/* End Of Background Styling */
+
+/* Start Of Left Content Styling */
+
+.content-left{
+    position: relative;
+    left: 100px;
+    top: 160px;
+}
+
+.content-left p {
+    font-size: 32px;
+    font-weight: 300;
+    color: hsl(240, 38%, 20%);
+}
+
+.content-left h3 {
+    color: hsl(240, 38%, 20%);
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+.content-left h3 span {
+    color: hsl(240, 18%, 77%);
+    font-weight: 300;
+}
+
+/* End Of Left Content Styling */
+
+/* Start Of Right Content Styling */
+
+.content-right img {
+    width: 90%;
+    box-shadow: 7px 7px 10px -6px black;
+}
+.content-right button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    position: relative;
+    top: -45px;
+    left: 20px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.content-right button img {
+    width: 20px;
+    box-shadow: none;
+}
+
+.left {
+    border-radius: 50% 0 0 50%;
+}
+
+.right {
+    border-radius: 0 50% 50% 0;
+
+}
+/* End Of Right Content Styling */
+
+
+/* Start Of Responsive Styling */
+@media only screen and (max-width: 600px) {
+    .con{
+        flex-direction: column;
+        flex-flow: column-reverse;
+    }
+    .avatar {
+        width: 60%;
+        margin-left: 35px;
+    }
+    .content-left{
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+
+    .content-right button {
+        left: 100px;
+    }
+    .content-left p{
+        font-size: 26px;
+        text-align: center;
+    }
+    .content-left h3{
+        text-align: center;
+    }
+
+    body{
+        background-position: 100% -150% , 0% 100% , 19% 74%;
+        background-size: 90% 90%,60% 10%,10% 5%;
+    }
+  }
+  
+
+
+/* End Of Responsive Styling */
+
